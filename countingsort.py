@@ -32,11 +32,10 @@ def counting_sort(arr: List[int]):
 
 def main():
     if len(sys.argv) < 2:
-        print('Usage: python countingsort.py [integer array]')
+        print('Usage: python {0} [integer array]'.format(sys.argv[0]))
         sys.exit()
-    a =[int(x) for x in sys.argv[1:]]
-    a_sorted = counting_sort(a)
-    print(a_sorted)
+    a = [int(x) for x in sys.argv[1:]]
+    print(counting_sort(a))
 
 if __name__ == '__main__':
     main()
